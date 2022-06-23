@@ -21,12 +21,12 @@ public class Stack {
         arr[++top] = x;
     }
 
-    public void pop() {
+    public int pop() {
         if (isEmpty()) {
             System.out.println("stack is empty");
-            return;
+            System.exit(1);
         }
-        top--;
+        return arr[top--];
     }
 
     public Boolean isEmpty() {
